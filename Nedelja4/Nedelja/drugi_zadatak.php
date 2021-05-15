@@ -12,16 +12,47 @@
     $prvi = mt_rand(1,100);
     $drugi = mt_rand(1,100);
     $treci = mt_rand(1,100);
-    echo "$prvi, $drugi, $treci";
+    echo "$prvi, $drugi, $treci<br/>";
 
-    if ($prvi > $drugi && $prvi > $treci){
-        echo "<p> $prvi </p>";
+    if ($prvi < $drugi && $prvi < $treci){
+        echo " $prvi<br/>";
+        if ($drugi < $treci){
+            echo "$drugi<br/>";
+            echo "$treci<br/>";
+        }
+        elseif ($treci<$drugi){
+            echo "$treci<br/>";
+            echo "$drugi<br/>";
+        }
+        
     }
-    if ($drugi > $treci){
-        echo "<p> $drugi </p>";
+    elseif($drugi < $prvi && $drugi < $treci){
+        echo "$drugi <br/>";
+        if ($prvi < $treci){
+            echo "$prvi<br/>";
+            echo "$treci<br/>";
+        }
+        elseif ($treci<$prvi){
+            echo "$treci<br/>";
+            echo "$prvi<br/>";
+        }
     }
-    if ( $treci < $prvi && $treci < $drugi)
-        echo "<p> $treci </p>";
+    elseif($treci < $prvi && $treci < $drugi)
+        echo "$treci<br/>";
+        if ($prvi < $drugi){
+            echo "$prvi<br/>";
+            echo "$drugi<br/>";
+        }
+        elseif ($drugi<$prvi){
+            echo "$drugi<br/>";
+            echo "$prvi<br/>";
+        }
+
+    /*if ($drugi < $treci){
+        echo "$drugi";
+    }
+    if ( $treci > $prvi && $treci > $drugi)
+        echo "$treci";*/
 ?>
 </body>
 </html>
