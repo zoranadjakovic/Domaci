@@ -14,30 +14,12 @@
         border:1px solid black;
         padding: 15px;
     }
-    /* .tab{
-        border: 1px solid black;
-          
-    }
-    .taba{
-        border: 1px solid black;
-        width: 30px;
-        height: 30px;
-        color:white;
-        background: black;
-         
-    }
-    {
-  background-color: black;
-} */
-    
-
     </style>
 </head>
 <body>
     
 <!-- Napravitabelu 3x4 u kojoj pise:  -->
 <?php
-
 echo "<table class='tabela'>";
     for($i=2; $i<=6; $i+=2){
         
@@ -49,9 +31,6 @@ echo "<table class='tabela'>";
         echo "</tr>";
     }
     echo "</table>";
-
-
-
 ?>
 </body>
 </html>
