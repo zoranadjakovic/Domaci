@@ -17,20 +17,25 @@
             return $num_drugi;
         }
         else{
-            return $num_treci
+            return $num_treci;
         }
-        }
-        
     }
+        
+    
     
 //     2. Написати функцију која враћа div унутар којег се налази N span елемената који за текст имају
 // редом бројеве од 1 до N
+
     function returnDiv($n){
-        for($i=1;$i<=$n;$i++){
-            return "<div> <span>$n</span> </div>"; 
-        } 
+        $div = "";
+        for($i=1; $i<=$n; $i++){
+            $div .= "<div><span> $i </span></div>";
+        }
+        return $div;
     }
-    returnDiv();
+        
+        echo returnDiv(15);
+    
 ?>
 </body>
 </html>
