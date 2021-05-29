@@ -9,6 +9,7 @@
 <body>
 <!-- Написати функцију која враћа већи од 3 броја (3 броја су прослеђени функцији кроз параметре) -->
 <?php
+
     function veci_broj($num_prvi,$num_drugi,$num_treci){
         if($num_prvi > $num_drugi and $num_prvi > $num_treci){
             return $num_prvi;
@@ -20,9 +21,6 @@
             return $num_treci;
         }
     }
-        
-    
-    
 //     2. Написати функцију која враћа div унутар којег се налази N span елемената који за текст имају
 // редом бројеве од 1 до N
 
