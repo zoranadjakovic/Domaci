@@ -19,8 +19,8 @@ Parametar oznacen predstavlja sta pise u meniju ("Stavka 1", ili "Stavka 2"…)
  <?php
     function ime($oznacen, $niz){
         echo "<ul>";
-        foreach($niz as $ind => $element){
-            echo "<li class='oznacen:$oznacen[$ind]'>".$element."</li>";
+        foreach($oznacen as $ind => $element){
+            echo "<li class='oznacen:$niz[$ind]'>".$element."</li>";
         }
         echo "</ul>";
     }
@@ -34,15 +34,15 @@ Parametar oznacen predstavlja sta pise u meniju ("Stavka 1", ili "Stavka 2"…)
 Rec "sto" se prikazuje u zelenoj boji, stolica u plavoj, mobilni u zutoj. -->
 
         <?php
-        // function dva_niza($boje, $reci){
-        //     foreach($reci as $ind => $element){
-        //         echo "<span style='color:$boje[$ind]'>".$element."</span>"; 
-        //     }    
+        function dva_niza($boje, $reci){
+            foreach($reci as $ind => $element){
+                echo "<span style='color:$boje[$ind]'>".$element."</span>"; 
+            }    
             
-        // }
-        //     $boje = ['green', 'blue', 'yellow'];
-        //     $reci = ['sto','stolica','mobilni'];
-        //     dva_niza($boje, $reci);
+        }
+            $boje = ['green', 'blue', 'yellow'];
+            $reci = ['sto','stolica','mobilni'];
+            dva_niza($boje, $reci);
         ?>
 </body>
 </html>
