@@ -27,9 +27,10 @@
     function returnDiv($n){
         $div = "";
         for($i=1; $i<=$n; $i++){
-            $div .= "<div><span> $i </span></div>";
+            $div .= "<span> $i </span>";
+            
         }
-        return $div;
+        return "<div>$div</div>";
     }
         
         echo returnDiv(15);
