@@ -16,12 +16,20 @@
 Parametar oznacen predstavlja index niza (0 ili 1 ili 2….)
 Parametar oznacen predstavlja sta pise u meniju ("Stavka 1", ili "Stavka 2"…)
  U css, dodati klasu oznacen - druga boja pozadine.
+
+ За први, петљом пролазиш кроз низ
+Ти си ставила foreach($oznacen ...)А онда провераваш да ли је индекс елемента једнак променљивој означен, и ако јесте додаш класу
+3:51
+у супротном стоји li без класе
+3:52
+Други је океј све колико видим
  <?php
     function ime($oznacen, $niz){
         echo "<ul>";
-        foreach($oznacen as $ind => $element){
+        foreach($niz as $ind => $element){
             echo "<li class='oznacen:$niz[$ind]'>".$element."</li>";
         }
+        if()
         echo "</ul>";
     }
     $oznacen = mt_rand(0,3);
