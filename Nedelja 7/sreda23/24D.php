@@ -28,15 +28,16 @@
     // Koji dan je najuspesniji
     // Kolika je prosecna uspesnost
     // Razliku izmedju najbolje i najgore uspesnosti
-
+    
     $asoc= ['ponedeljak'=>27, 'utorak'=>29, 'cetvrtak'>28, 'petak'=>28];
 
     function najbolji($asoc, $a){
         if($a === 'najuspesniji'){
             $max = max($asoc);
             $ind = array_search($max, $asoc);
+            return $ind;
         }
-        return $ind;
+        
     }
     $bo = najbolji($asoc,'najuspesniji');
     echo $bo;
@@ -54,16 +55,17 @@
      if($b === 'najgori'){
             $min = min($asoc);
             $ind_1 = array_search($min, $asoc);
+            return $ind_1;
         }
-        return $ind_1;
+        
     }
     $g = najgori($asoc, 'najgori');
     echo $g;
 
     function razlika($asoc){
-        return $bo - $g;
+        echo najbolji($asoc,0) - najgori($asoc,0);
     }
-    razlika($asoc);
+     razlika($asoc);
     
     
     
