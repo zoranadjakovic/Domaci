@@ -23,8 +23,8 @@
       for($i=0;$i<count($x);$i++){
       $osoba['godina_staza'][$i]= mt_rand(1,3);
       }
-      return $osoba;}
-   $x);
+      return $osoba;
+   }$x);
 
    print_r($x);
    // <!-- 2.Preko usort fje sortirati niz po godinama_staza (*dodatak - neobavezno, ako su godine iste pri uporedjivanju, neka prva bude starija osoba) -->

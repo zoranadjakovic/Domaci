@@ -8,8 +8,10 @@
 </head>
 <body>
 
-<!-- 1.Dodati u gornji niz jos 4 osobe po zelji.
+
+
 <?php
+// <!-- 1.Dodati u gornji niz jos 4 osobe po zelji.
 $niz = [ 
 ['ime'=>"Dragana", "godine"=>32, "grad"=>"Nis", "pozicija"=>"programer"],
 ['ime'=>"Ivana", "godine"=>20, "grad"=>"Beograd", "pozicija"=>"dizajner"],
@@ -49,9 +51,6 @@ foreach($niz as $ind=>$osoba){
     }
 }
 ?>
-
-
-
 
 </body>
 </html>
