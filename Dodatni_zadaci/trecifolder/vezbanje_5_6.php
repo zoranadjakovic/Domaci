@@ -21,7 +21,7 @@
     // echo "Potreban ti je index -> koristi foreach.";
     
 
-    echo " <p> 1. Napisati fju koja za dati niz izracunava i vraca zbir brojeva po apsolutnoj vrednosti. </p>";
+    echo " <p> 1. Napisati fju koja za dati niz izracunava i vraca zbir brojeva po------0 apsolutnoj vrednosti. </p>";
 
    // koristiti reduce
 
@@ -171,8 +171,7 @@ echo " <p>   6.6. \"dodaj_kolonu_bodovi\" svim timovima dodaje novu kolonu \"bod
 // koristi map
 function dodaj_kolonu_bodovi(){
     global $fk;
-    $fk = array_map(
-        function($tim){
+    $fk = array_map(function($tim){
             $tim['bodovi'] = broj_bodova($tim['ime']);
             return $tim;
         },
