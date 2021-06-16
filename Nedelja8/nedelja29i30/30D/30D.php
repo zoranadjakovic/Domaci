@@ -8,13 +8,13 @@
 </head>
 <body>
     <?php
-    1. Nastaviti zadatak sa casa i :
-    Napraviti klasu WebSite. Metode: 
-     - header() sa naslovom "Dobro dosli u web-shop" - link ka index.php.
-     - footer() sa naslovom "Bolje vas nasli" 
-     - meni() koji prikazuje listu svih grupa. Svaki naziv grupe je link - index.php?grupa=…
-    2. Prepraviti index.php i detaljnije.php da prikazuju i header, pa meni, pa proizvode, pa footer...
-    3.* dopunski - neobavezno: napraviti meni tako sto se pokupe sve grupe iz niza podaci, i naprave svi linkovi.
+    // 1. Nastaviti zadatak sa casa i :
+    // Napraviti klasu WebSite. Metode: 
+    //  - header() sa naslovom "Dobro dosli u web-shop" - link ka index.php.
+    //  - footer() sa naslovom "Bolje vas nasli" 
+    //  - meni() koji prikazuje listu svih grupa. Svaki naziv grupe je link - index.php?grupa=…
+    // 2. Prepraviti index.php i detaljnije.php da prikazuju i header, pa meni, pa proizvode, pa footer...
+    // 3.* dopunski - neobavezno: napraviti meni tako sto se pokupe sve grupe iz niza podaci, i naprave svi linkovi.
     
     class WebSite{
 
