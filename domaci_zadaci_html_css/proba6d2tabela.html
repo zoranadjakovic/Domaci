@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        /* div p{ 
+            border:2px solid #333;
+            box-shadow:0px 0px 20px #333;
+            width:300px; height:300px;
+            display:inline-block;
+        }
+        div :first-child{
+            background:red;
+        }
+        div p:first-of-type{
+            background:green;
+        }
+        div p:nth-of-type(2){
+            background:lightblue; */
+        /* } */
+        table tr td{
+            border:2px solid black;
+            border-left:0;
+            border-right:0;
+        }
+        table tr td:first-child{
+            border-left:2px solid black;
+        }
+        table tr td:last-child{
+            border-right:2px solid black;
+        }
+        table tr:nth-child(odd){ 
+            background: lightcoral;
+            color:white;
+        }
+        table tr:nth-child(even){
+            background:white;
+            color:lightcoral;
+        }
+        div :not(:first-child){
+            color:red;
+        }
+        table.nevidljiva{
+            opacity:0.5;
+            transform:rotate(90deg) scale(2);
+            transform:translate(300px, 100px);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>Text nema crvenu boju</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quia.</p>
+    </div>
+    <!-- table>tr*5>td*4>span{Celija $} -->
+    <table class="nevidljiva">
+        <tr>
+            <td>Celija 1</td>
+            <td>Celija 2</td>
+            <td>Celija 3</td>
+            <td>Celija 4</td>
+        </tr>
+        <tr>
+            <td>Celija 1</td>
+            <td>Celija 2</td>
+            <td>Celija 3</td>
+            <td>Celija 4</td>
+        </tr>
+        <tr>
+            <td>Celija 1</td>
+            <td>Celija 2</td>
+            <td>Celija 3</td>
+            <td>Celija 4</td>
+        </tr>
+        <tr>
+            <td>Celija 1</td>
+            <td>Celija 2</td>
+            <td>Celija 3</td>
+            <td>Celija 4</td>
+        </tr>
+        <tr>
+            <td>Celija 1</td>
+            <td>Celija 2</td>
+            <td>Celija 3</td>
+            <td>Celija 4</td>
+        </tr>
+    </table>
+    <style>
+        table td span::before{
+            content: "<span>r</span>";
+            color: blue;
+        }
+        li{
+            list-style-type: none; 
+        }
+
+        li:before{
+            content:"";
+            background:url("alien4.png") no-repeat center / cover;
+            width:1em; height:1em;
+            display:inline-block;
+            opacity:0.4;
+        }
+    </style>
+    
+    <table>
+        <tr>
+            <td><span>Span 1</span></td>
+            <td><span>Span 2</span></td>
+            <td><span>Span 3</span></td>
+            <td><span>Span 4</span></td>
+        </tr>
+        <tr>
+            <td><span>Span 1</span></td>
+            <td><span>Span 2</span></td>
+            <td><span>Span 3</span></td>
+            <td><span>Span 4</span></td>
+        </tr>
+        <tr>
+            <td><span>Span 1</span></td>
+            <td><span>Span 2</span></td>
+            <td><span>Span 3</span></td>
+            <td><span>Span 4</span></td>
+        </tr>
+        <tr>
+            <td><span>Span 1</span></td>
+            <td><span>Span 2</span></td>
+            <td><span>Span 3</span></td>
+            <td><span>Span 4</span></td>
+        </tr>
+    </table>
+</body>
+</html>

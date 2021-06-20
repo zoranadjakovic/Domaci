@@ -7,12 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="prosek.php" method="GET">
-        <input type="text" name="duzaaarec"/>
-        <input type="text" name="kracarec"/>
-        <input type="submit">
-</form>
-
-
+    
 </body>
 </html>

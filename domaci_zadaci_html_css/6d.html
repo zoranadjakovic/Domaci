@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        h1{
+            font-family: 'Roboto', sans-serif; 
+        }
+         
+       .name{
+            color: grey;
+            border: none;
+            border-bottom: 1px solid grey;
+            width: 350px;
+            font-family: 'Roboto', sans-serif; 
+       }
+       .car{
+            color: grey;
+            border: none;
+            border-bottom: 1px solid grey;
+            width: 350px;
+            background-image: url(card.png) left;
+            
+
+       }
+       
+       .card{
+            color: grey;
+            font-family: 'Roboto', sans-serif; 
+       }
+       .exp{
+            color: grey;
+            font-family: 'Roboto', sans-serif; 
+       }
+       .expi{
+            color: grey;
+            border: none;
+            border-bottom: 1px solid grey;
+            width: 250px;
+
+       }
+       .cvc{
+            color: grey;
+            font-family: 'Roboto', sans-serif; 
+       }
+       .cvc1{
+            color: grey;
+            border: none;
+            border-bottom: 1px solid grey;
+            width: 250px;
+
+       }
+       .save{
+            text-align: center;
+            color: grey;
+            font-family: 'Roboto', sans-serif; 
+       }
+        .pay{
+            background-color: turquoise;
+            border: none;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+            padding: 15px 32px;
+            box-shadow: 0px 8px 15px rgba(28, 241, 241, 0.1);
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <form method="GET" action="6d.css">
+        <h1> Your payment details </h1>
+        <p id="name">
+            <label class="name">
+            NAME
+            </label><br>
+                <input class="name"
+                type="name"/>
+        </p>  
+        <p id="card">
+            
+            <label for="cn" class="card"> CARD NUMBER</label><br>
+            <img src="card.png" width="50px"/><br>
+            <input class="car"
+                type="tel" 
+                inputmode="numeric"/>   
+        </p> 
+        <div>
+            <label for="exp" class="exp">EXPIRATION DATE</label><br>
+            <input class="expi"
+                type="date"/>
+            
+        </div><br>
+        <section>
+            <label for="cvc" class="cvc">CVC</label><br>
+                <input class="cvc1"
+                type="text"
+                placeholder="123"/>
+        </section><br>
+        <section>
+            <label for="checkb" class="save">Save my card for future purchases</label>
+            <input
+                type="checkbox"checked/>
+        </section><br>
+        <article>
+            <label for="pay"></label>
+                <input class="pay"
+                type="submit"
+                value="PAY NOW"/>
+        </article>
+
+
+    </form>
+</body>
+</html>

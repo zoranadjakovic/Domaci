@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2" colspan="2">Column0</th>
+                <th rowspan="2">Column1</th>
+                <th colspan="2">&nbsp;</th> 
+            </tr>
+            <tr>
+            <th>Column2a</th>
+            <th>Column2b</th>
+            </tr>
+            <tr>
+                <td rowspan="2">A</td>
+                <td>b</td>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+            <tr>
+                <td>c</td>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+            <tr>
+                <td colspan="2">D</td>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+        </thead>
+
+    </table>
+    <form method="GET" action="tabelaiforma.html">
+        <p>
+            <label for="username_input_id">Ime:</label>
+            <input 
+                style="font-size: 40;"
+                id="username_input_id"
+                name="username_za_php"
+                type="text"
+                placeholder="Kobe Bryant"
+                disabled
+            />
+        </p>
+        <p>
+            <label>Password:</label>
+                <input 
+                style="font-size: 4;"
+                type="password"/>  
+        </p>
+        <p>
+            <label> Broj dresa: </label>
+                <input 
+                    style="font-size: 30;" 
+                    type="number" 
+                    step="1" 
+                    max="30"/>
+        </p>
+         <p>
+             <label> Kosarkaski klub: </label>
+                <select name="klub">
+                        <option value="BC">Boston Celtics‎ </option>
+                        <option value="LAL">Los Angeles Lakers‎ </option>
+                        <option value="SK">Sacramento Kings‎</option>
+                        <option value="DN">Denver Nuggets‎ ‎</option>
+                </select>
+        </p>
+        <p>
+            <label>
+                Pozicija: <br>
+            </label>
+                    <input type="radio" name="pol" value="1" /> Centar <br>
+                    <input type="radio" name="pol" value="2"/> Bek šut <br>
+                    <input type="radio" name="pol" value="3"/> Organizator igre <br>
+            
+            </p>
+            <p>
+                <label> Tim: </label><br>
+                <input type="checkbox" name="s" checked/> Senior <br>
+                <input type="checkbox" name="j" checked/> Junior <br>
+                <input type="checkbox" name="k" checked/> Kadet <br>
+                <input type="checkbox" name="p" checked/> Pionir <br>
+            </p>
+                <label for="treninzi">Broj treninga:</label>
+                <select name="treninzi" id="treninzi">
+                <optgroup label="Aktivno">
+                <option value="broj">4-5</option>
+                <option value="broj">5-7</option>
+                </optgroup>
+                <optgroup label="Rekreativno">
+                <option value="broj">1-2</option>
+                <option value="broj">2-3</option>
+                </optgroup> 
+                </select>
+                <br>
+            <p>
+                <textarea 
+                        style="font-size: 30;"
+                        rows="8"
+                        cols="40"
+                        placeholder="Mesto za Vasa pitanja:">
+                </textarea> <br>     
+            </p>
+            <p>
+                <input type="submit" value="Pošalji">
+            </p>
+                <label> Nalazimo se na ovoj lokaciji:</label>
+                <iframe width="100%" height="600" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27405770525!2d-118.69192047471653!3d34.02016130653294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20Kalifornija%2C%20Sjedinjene%20Ameri%C4%8Dke%20Dr%C5%BEave!5e0!3m2!1sbs!2srs!4v1619436454645!5m2!1sbs!2srs"></iframe>
+            
+    </form>
+</body>
+</html>

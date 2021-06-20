@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        #ime{
+            background-color: salmon;
+            color: yellowgreen;
+        }
+        #pass{
+            background-color: yellowgreen;
+            color: salmon;
+        }
+        #dres{
+            color: rgba(67,154,8,200);
+        }
+        .kk{
+            color:  #FF154A;
+        }
+       
+
+    </style>
+    
+</head>
+<body>
+    <form method="GET" action="tabelaiforma.html">
+        <p>
+            <label for="username_input_id" id="ime">Ime:</label>
+            <input 
+                style="font-size: 40;"
+                id="username_input_id"
+                name="username_za_php"
+                type="text"
+                placeholder="Kobe Bryant"
+            />
+        </p>
+        <p>
+            <label id="pass">Password:</label>
+                <input 
+                style="font-size: 4;"
+                type="password"/>  
+        </p>
+        <p>
+            <label id="dres"> Broj dresa: </label>
+                <input 
+                    style="font-size: 30;" 
+                    type="number" 
+                    step="1" 
+                    max="30"/>
+        </p>
+        <div class="kk"> 
+         <p>
+             <label> Kosarkaski klub: </label>
+                <select name="klub">
+                        <option value="BC">Boston Celtics‎ </option>
+                        <option value="LAL">Los Angeles Lakers‎ </option>
+                        <option value="SK">Sacramento Kings‎</option>
+                        <option value="DN">Denver Nuggets‎ ‎</option>
+                </select>
+        </p>
+    </div>
+        <p class="poz">
+            <label>
+                Pozicija: <br>
+            </label>
+                    <input type="radio" name="pol" value="1"/> Centar <br>
+                    <input type="radio" name="pol" value="2"/> Bek šut <br>
+                    <input type="radio" name="pol" value="3"/> Organizator igre <br>
+            
+            </p>
+            <p class="timovi">
+                <label> Tim: </label><br>
+                <input type="checkbox" name="s" checked/> Senior <br>
+                <input type="checkbox" name="j" checked/> Junior <br>
+                <input type="checkbox" name="k" checked/> Kadet <br>
+                <input type="checkbox" name="p" checked/> Pionir <br>
+            </p>
+            <p class="timovi">
+                <label for="treninzi">Broj treninga:</label>
+                <select name="treninzi" id="treninzi">
+                <optgroup label="Aktivno">
+                <option value="volvo">4-5</option>
+                <option value="saab">5-7</option>
+                </optgroup>
+                <optgroup label="Rekreativno">
+                <option value="mercedes">1-2</option>
+                <option value="audi">2-3</option>
+                </optgroup> 
+                </select>
+                <br>
+            </p>
+            <p class="timovi">
+                <textarea 
+                        style="font-size: 30;"
+                        rows="8"
+                        cols="60"
+                        placeholder="Mesto za Vasa pitanja:"
+                        >
+                </textarea> <br>     
+            </p>
+            <p>
+                <input type="submit" value="Pošalji">
+            </p>
+                <label class="timovi"> Nalazimo se na ovoj lokaciji:</label>
+                <iframe width="100%" height="600" src="https://goo.gl/maps/Ho31k3iBMLGbrsGC7"></iframe>
+            
+    </form>
+    
+</body>
+</html>
