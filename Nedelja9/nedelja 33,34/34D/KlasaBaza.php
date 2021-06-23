@@ -15,8 +15,7 @@
     // Metoda prikazi_putnike prikazuje sve putnike i njihovo putovanje (ime_prezime, drzava, grad, datum_polaska, datum_povratka)
     // Metoda otkazi_rezervaciju koja za dati  broj_pasosa otkazuje sva njegova putovanja
     
-    // Napraviti obekat ove klase i pozvati sve metode po jednom za proveru.
-    
+    // Napraviti obekat ove klase i pozvati sve metode po jednom za proveru.  
     class Baza{
         public $conn;
 
