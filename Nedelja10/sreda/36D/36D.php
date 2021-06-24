@@ -12,7 +12,7 @@
 // U bazi napraviti tabele: korpa (id, datum_vreme, ukupno)
 // stavke_korpe (id, korpa_id, proizvod_id, cena, kolicina)
 // proizvodi (id, naziv, cena)
-// Popuniti podacima samo tabelu "proizvodi".
+// Popuniti podacima samo tabelu "proizvodi". 
 
 // 2.  Napraviti niz stavke_korpe u sesiji kao prazan niz. Svaka stavka ce imati id_proizvoda, naziv, cenu i kolicinu.
 // Napraviti 3 funkcije za dodavanje novog proizvoda, menjanje kolicine proizvoda, i brisanje proizvoda iz niza. (ko zna, moze i preko klase :)). 
